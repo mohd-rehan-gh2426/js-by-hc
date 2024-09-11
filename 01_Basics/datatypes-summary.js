@@ -64,9 +64,54 @@ JavaScript's dynamic typing allows for more flexibility but can lead to potentia
 
 /*Functios*/
 
-const myFunction = function(){
-    console.log("Hello World");
+// const myFunction = function(){
+//     console.log("Hello World");
     
+// }
+
+// console.log(myFunction);
+
+//+++++++++++++++++++MEMEORY++++++++++++++++++++++++
+
+
+// 1.Stack => Used for Primitive datatype,gets a copy of 
+//            declared variabkle.
+
+
+// 2.Heap => Used for Non Primitve datatype, gets a copy 
+//           of declared variable.
+
+// let myName = "Muhammad Rehan"
+// console.log(myName);
+
+// let anotherName = myName
+// console.log(anotherName);
+
+// anotherName = "Muhammad Umar"
+
+
+
+// console.log(myName);
+
+// console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
 }
 
-console.log(myFunction);
+console.log(userOne.email);
+
+
+let userTwo = userOne
+
+userTwo.email = "mdrehanchhipa@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
